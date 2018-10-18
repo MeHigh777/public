@@ -1,0 +1,364 @@
+/* Global CSS */
+
+* {
+  font-family: 'K2D', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  color: #fff;
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  background-image: url('../images/bg.jpg');
+}
+
+.main-content,
+.main-banner,
+.main-footer {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 1180px;
+}
+
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+span {
+  color: #B44335;
+}
+
+a {
+  color: #598307;
+}
+
+a:hover,
+i:hover {
+  text-decoration: none;
+  color: #B44335;
+  transition: 0.3s, eas-in-out;
+  cursor: pointer;
+}
+/* Custom CSS */
+
+.main-banner {
+  padding-top: 300px;
+  padding-bottom: 150px;
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.main-banner .logo {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+}
+.main-banner .container {
+  border: 1px solid #B44335;
+  width: 45%;
+  background: rgba(0, 0, 0, .75);
+  margin-top: 15px;
+}
+
+.main-banner .container h1,
+.main-banner .container p {
+  padding: 25px 0;
+}
+
+.main-content {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: #fff;
+  background: rgba(0, 0, 0, .98);
+  position: relative;
+}
+
+/* .main-content #description {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  font-size: 18px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.main-content .fa-times-circle {
+  position: absolute;
+  top: 0;
+  right: -150px;
+  bottom: 100%;
+} */
+
+.main-content .player_picture img {
+  max-width: 140px;
+  max-height: 80px;
+  border-radius: 5px;
+}
+
+.main-content .player_info h5:first-child {
+  margin-top: 20px;
+}
+
+.main-content .player_info h5 {
+  font-size: 15px;
+}
+
+.main-content .player_info ul {
+  padding-left: 0;
+  margin-top: 20px;
+  border-top: 1px solid #B44335;
+}
+
+.main-content .player_info  ul  li {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.main-content .player_info a {
+  font-size: 13.5px;
+}
+
+.main-footer {
+  padding: 15px 25px;
+  background: rgba(0, 0, 0, .98);
+  font-size: 13.5px;
+  border-top: 1px solid #B44335;
+}
+
+.main-footer ul {
+  list-style-type: none;
+  display: inline-flex;
+  padding-left: 0;
+}
+
+.main-footer .socials li {
+  margin-right: 10px;
+}
+
+.main-footer .socials ul {
+  padding-left: 0;
+}
+
+.main-footer .socials p a {
+  margin-left: 5px;
+}
+
+#sevenDetails,
+#squikyDetails,
+#unqDetails,
+#eqiDetails,
+#slutDetails {
+  border: none;
+  background: transparent;
+  font-size: 13.5px;
+  color: #598307;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(0, 0 , 0, .90);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #B44335;
+  width: 60%;
+  height: 45%;
+}
+
+.modal-content img {
+  position: absolute;
+  max-width: 250px;
+  max-height: 100px;
+  float: left;
+}
+
+.modal-content .avatar {
+  top: 40px;
+}
+
+.modal-content .avatar-text {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+.modal-content .rank {
+  top: 55%;
+}
+
+.modal-content .rank-text {
+  position: absolute;
+  top: 50%;
+}
+
+.modal-content p {
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: left;
+}
+
+.modal-content p:last-of-type {
+  margin-top: 25px;
+}
+
+.modal-content .tabs {
+  margin-top: 35px;
+}
+
+.modal-content .tabs .heroes,
+.modal-content .tabs .latest-games {
+  padding: 5px 20px;
+  font-size: 18px !important;
+  border: 1px solid #598307;
+}
+
+.modal-content .tabs .heroes:hover,
+.modal-content .tabs .latest-games:hover {
+  border-color: #598307;
+  background: #598307;
+  color: #fff;
+}
+/* The Close Button */
+.close,
+.close1,
+.close2,
+.close3,
+.close4 {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  position: absolute;
+  font-weight: bold;
+  right: 25px;
+  top: 10px;
+  opacity: 1;
+  text-shadow: 0px;
+}
+
+.close:hover,
+.close:focus,
+.close1:hover,
+.close1:focus,
+.close2:hover,
+.close2:focus,
+.close3:hover,
+.close3:focus,
+.close4:hover,
+.close4:focus {
+  color: #B44335;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover,
+.close1:not(:disabled):not(.disabled):focus, .close1:not(:disabled):not(.disabled):hover,
+.close2:not(:disabled):not(.disabled):focus, .close2:not(:disabled):not(.disabled):hover,
+.close3:not(:disabled):not(.disabled):focus, .close3:not(:disabled):not(.disabled):hover,
+.close4:not(:disabled):not(.disabled):focus, .close4:not(:disabled):not(.disabled):hover{
+  color: #B44335;
+  text-shadow: none;
+  opacity: 1;
+}
+
+button:focus,
+button:hover {
+  outline: none;
+  cursor: pointer;
+}
+
+/* Slider */
+
+.modal-content .hero-slider {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.modal-content .hero-slider img,
+.modal-content .latest-games img {
+  position: static;
+  float: none;
+  display: inline;
+}
+
+.modal-content .hero-slider .slick-dots {
+  border-top: transparent;
+}
+
+/* .modal-content .hero-slider .slick-slide {
+  width: 134px !important;
+} */
+
+.modal-content .hero-slider .slick-track {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.modal-content .win-rate {
+  display: none;
+}
+
+.modal-content .win-rate ul {
+  display: inline-flex;
+  list-style-type: none;
+  border-top: none;
+}
+
+.modal-content .win-rate ul li {
+  margin-left: 5px;
+  font-size: 33px;
+  border: 1px solid;
+  padding: 5px;
+}
+
+.modal-content .tabs .js-active {
+  background: #598307;
+  color: #fff;
+  border-color: #598307;
+}
+
+.modal-content .win {
+  color: green;
+  border-color: green;
+}
+
+.modal-content .lose {
+  color: red;
+  border-color: red;
+}
